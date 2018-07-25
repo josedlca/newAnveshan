@@ -68,17 +68,113 @@ body {
     padding: 2% 0; }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   top: 0;
   align-items: center;
-  justify-content: center; }
-  .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
+  justify-content: center;
+  z-index: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(85, 61, 179, 0.9));
+  visibility: hidden; }
+  .menu__home {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__home a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__home a:hover {
+        font-size: 5.5rem; }
+  .menu__graphs {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__graphs a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__graphs a:hover {
+        font-size: 5.5rem; }
+  .menu__process {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__process a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__process a:hover {
+        font-size: 5.5rem; }
+  .menu__services {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__services a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__services a:hover {
+        font-size: 5.5rem; }
+  .menu__step {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__step a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__step a:hover {
+        font-size: 5.5rem; }
+  .menu__footer {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    width: 30rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+    .menu__footer a {
+      text-decoration: none;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      transition: .3s all ease; }
+      .menu__footer a:hover {
+        font-size: 5.5rem; }
 
 .quisque {
   background-color: #f8f8f8; }
