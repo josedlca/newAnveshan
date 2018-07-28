@@ -2,19 +2,17 @@
 // let popup = document.getElementById('popup');
 // let popupClose = document.querySelector('.popup__close');
 let homeMenu = document.getElementById('home-menu');
-let myMenu = document.querySelector('.mymenu');
-let myMenuClose = document.querySelector('.mymenu-close');
-let myMenuNav = document.querySelector('.mymenu-nav')
+let menu = document.querySelector('.menu');
+let myMenuClose = document.querySelector('.iconmenu');
 
 homeMenu.addEventListener('click', function(){
-    myMenu.classList.add('mymenu-see');
-    myMenuNav.classList.add('move-nav');
+    menu.classList.add('menu-see');
 });
 
 myMenuClose.addEventListener('click', function(){
-    myMenu.classList.remove('mymenu-see');
-    myMenuNav.classList.remove('move-nav');
+    menu.classList.remove('menu-see');
 });
+
 
 // popupLink.addEventListener('click',function(){
 //     popup.classList.add('mostrar');

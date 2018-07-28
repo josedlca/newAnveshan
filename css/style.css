@@ -25,6 +25,9 @@ body {
   .margin__left {
     margin-left: 0; }
 
+.positions-a {
+  position: absolute; }
+
 .home {
   background-image: url("../img/fondo.png");
   background-repeat: no-repeat;
@@ -33,23 +36,29 @@ body {
   width: 100%;
   height: 100vh; }
   .home__header {
-    padding: 2% 0; }
-    .home__header--minNav a {
-      color: #fff;
-      font-size: 2rem;
-      text-decoration: none; }
-    .home__header--minNav span {
-      color: #fff;
-      font-size: 2rem;
-      margin: 0 1rem 0 1rem; }
-    .home__header--minNav p {
-      color: #fff;
-      font-size: 2rem;
-      display: inline-block;
-      margin-bottom: 0;
-      cursor: pointer; }
-      .home__header--minNav p i {
+    padding: 2% 0;
+    position: relative; }
+    .home__header--minNav {
+      position: relative; }
+      .home__header--minNav a {
+        color: #fff;
+        font-size: 2rem;
+        text-decoration: none; }
+      .home__header--minNav-line {
+        color: #fff;
+        font-size: 2rem;
         margin: 0 1rem 0 1rem; }
+      .home__header--minNav-p {
+        color: #fff;
+        font-size: 2rem;
+        width: 11rem;
+        display: inline-block;
+        margin-bottom: 0;
+        position: fixed;
+        cursor: pointer;
+        z-index: 2; }
+        .home__header--minNav-p i {
+          margin: 0 1rem 0 1rem; }
   .home__description--tittle {
     padding: 8% 0 3% 0; }
     .home__description--tittle h1 {
@@ -76,7 +85,7 @@ body {
   top: 0;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(85, 61, 179, 0.9));
   visibility: hidden; }
   .menu__home {
@@ -175,6 +184,18 @@ body {
       transition: .3s all ease; }
       .menu__footer a:hover {
         font-size: 5.5rem; }
+  .menu i {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    top: 4rem;
+    right: 21rem;
+    font-size: 4rem;
+    cursor: pointer; }
+
+.menu-see {
+  z-index: 2;
+  visibility: visible; }
 
 .quisque {
   background-color: #f8f8f8; }
@@ -208,13 +229,44 @@ body {
     .quisque__contein--video-parts {
       display: inline-block;
       cursor: pointer; }
-      .quisque__contein--video-parts p {
-        font-size: 1.7rem;
-        font-weight: 300;
-        color: #5d5d5d; }
+      .quisque__contein--video-parts a {
+        display: inline-flex;
+        text-decoration: none; }
+        .quisque__contein--video-parts a p {
+          font-size: 1.7rem;
+          font-weight: 300;
+          color: #5d5d5d; }
+
+.popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  visibility: hidden;
+  transition: .6s all; }
+  .popup:target {
+    visibility: visible;
+    transition: .6s all; }
+  .popup a {
+    position: absolute;
+    right: 12%;
+    top: 11%; }
+    .popup a i {
+      font-size: 4rem;
+      color: #fff; }
+  .popup__video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%; }
 
 .process {
-  padding: 7% 0; }
+  padding: 7% 0;
+  background: #fff; }
   .process__tittleText h2 {
     font-size: 7.2rem;
     font-weight: 600;
