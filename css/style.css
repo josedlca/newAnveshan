@@ -222,7 +222,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__home a:hover {
         font-size: 5.5rem; }
   .menu__graphs {
@@ -237,7 +238,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__graphs a:hover {
         font-size: 5.5rem; }
   .menu__process {
@@ -252,7 +254,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__process a:hover {
         font-size: 5.5rem; }
   .menu__services {
@@ -267,7 +270,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__services a:hover {
         font-size: 5.5rem; }
   .menu__step {
@@ -282,7 +286,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__step a:hover {
         font-size: 5.5rem; }
   .menu__footer {
@@ -297,7 +302,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__footer a:hover {
         font-size: 5.5rem; }
   .menu__contact {
@@ -313,7 +319,8 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition: .2s all; }
       .menu__contact a:hover {
         font-size: 5.5rem; }
   .menu i {
