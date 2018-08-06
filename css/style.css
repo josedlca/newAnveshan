@@ -51,16 +51,20 @@ body {
     .home__header--minNav-p {
       color: #fff;
       font-size: 2rem;
-      width: 11rem;
       display: inline-block;
       margin-bottom: 0;
-      position: fixed;
+      position: relative;
       cursor: pointer;
-      z-index: 2; }
+      z-index: 0; }
       .home__header--minNav-p p {
-        display: inline-block; }
+        display: inline-block;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0; }
       .home__header--minNav-p i {
-        margin: 0 1rem 0 1rem; }
+        margin: 0 1rem 0 1rem;
+        display: inline-block;
+        color: #fff; }
   .home__description {
     width: 100%;
     height: 100%; }
@@ -79,9 +83,14 @@ body {
         font-weight: 100;
         color: #fff; }
     .home__description--arrowDown {
-      padding: 2% 0; }
+      padding: 2.5% 0; }
       .home__description--arrowDown-key {
-        display: inline-block; }
+        display: inline-block;
+        background-color: transparent;
+        border-color: transparent;
+        outline: none; }
+        .home__description--arrowDown-key a {
+          text-decoration: none; }
         .home__description--arrowDown-key i {
           color: #fff;
           display: block;
@@ -121,6 +130,22 @@ body {
   100% {
     opacity: 0.2; } }
 
+#arrow-up {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: #7a225d;
+  border-radius: 50%;
+  visibility: visible;
+  opacity: 0.7;
+  z-index: 1; }
+  #arrow-up i {
+    color: #fff;
+    font-size: 3rem; }
+
+.hide-arrow {
+  visibility: hidden !important; }
+
 @media (min-width: 620px) and (max-width: 1023px) {
   .home__header {
     height: 100%;
@@ -134,12 +159,10 @@ body {
         display: none; }
       .home__header--minNav span {
         display: none; }
-      .home__header--minNav-p {
-        width: 20rem; }
-        .home__header--minNav-p p {
-          display: none; }
-        .home__header--minNav-p i {
-          margin: 0 auto; }
+      .home__header--minNav-p p {
+        display: none; }
+      .home__header--minNav-p i {
+        margin: 0 auto; }
   .home__description--tittle {
     padding: 14% 0 8% 0; }
     .home__description--tittle h1 {
@@ -163,11 +186,17 @@ body {
       .home__header--minNav-p p {
         display: none; }
       .home__header--minNav-p i {
-        margin: 0 auto; }
+        margin-top: 1rem; }
   .home__description--tittle {
     padding: 8% 0; }
     .home__description--tittle h1 {
-      font-size: 4.5rem; } }
+      font-size: 4.5rem; }
+  .home__description--arrowDown {
+    padding: 5.5% 0; } }
+
+#arrow-up {
+  bottom: 1rem;
+  right: 1rem; }
 
 .menu {
   position: fixed;
@@ -179,10 +208,10 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(85, 61, 179, 0.9));
+  background: rgba(154, 65, 124, 0.9);
   visibility: hidden; }
   .menu__home {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -193,12 +222,11 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__home a:hover {
         font-size: 5.5rem; }
   .menu__graphs {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -209,12 +237,11 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__graphs a:hover {
         font-size: 5.5rem; }
   .menu__process {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -225,12 +252,11 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__process a:hover {
         font-size: 5.5rem; }
   .menu__services {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -241,12 +267,11 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__services a:hover {
         font-size: 5.5rem; }
   .menu__step {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -257,12 +282,11 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__step a:hover {
         font-size: 5.5rem; }
   .menu__footer {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -273,13 +297,12 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__footer a:hover {
         font-size: 5.5rem; }
   .menu__contact {
     display: none;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(85, 61, 179, 0.7));
+    background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
@@ -290,8 +313,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .3s all ease; }
+      height: 100%; }
       .menu__contact a:hover {
         font-size: 5.5rem; }
   .menu i {
@@ -304,8 +326,8 @@ body {
     cursor: pointer; }
 
 .menu-see {
-  z-index: 2;
-  visibility: visible; }
+  visibility: visible;
+  z-index: 2; }
 
 @media (min-width: 620px) and (max-width: 1023px) {
   .menu i {
@@ -427,11 +449,10 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  visibility: hidden;
-  transition: .6s all; }
+  z-index: 2;
+  visibility: hidden; }
   .popup:target {
-    visibility: visible;
-    transition: .6s all; }
+    visibility: visible; }
   .popup a {
     position: absolute;
     right: 9%;
@@ -558,6 +579,14 @@ body {
     font-size: 1.5rem;
     color: #5d5d5d;
     font-weight: 300; }
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .process__circles--green {
+    width: 24rem;
+    height: 24rem; }
+  .process__circles--skyblue {
+    width: 28rem;
+    height: 28rem; } }
 
 @media (min-width: 620px) and (max-width: 1023px) {
   .process__tittleText h2 {

@@ -18,7 +18,7 @@
               <div class="col-7 col-md-5 text-center align-self-center">
                 <div class="home__header--logo"><img src="img/Logo-min.png" alt="logo"></div>
               </div>
-              <div class="col-5 col-md-4 text-center align-self-center">
+              <div class="col-3 col-md-3 text-center align-self-center">
                 <div class="home__header--minNav"><a href="#">CONTACT</a><span class="home__header--minNav-line">|</span>
                   <div class="home__header--minNav-p" id="home-menu">
                     <p>MENU </p><i class="fa fa-bars"></i>
@@ -46,12 +46,12 @@
             <div class="home__description--arrowDown">                    
               <div class="row justify-content-center">
                 <div class="col-md-3 text-center"> 
-                  <div class="home__description--arrowDown-key"><i class="fa fa-angle-down home__description--arrowDown-key_one"></i><i class="fa fa-angle-down home__description--arrowDown-key_two"></i><i class="fa fa-angle-down home__description--arrowDown-key_three"></i></div>
+                  <button class="home__description--arrowDown-key"><a href="#quisque"><i class="fa fa-angle-down home__description--arrowDown-key_one"></i><i class="fa fa-angle-down home__description--arrowDown-key_two"></i><i class="fa fa-angle-down home__description--arrowDown-key_three"></i></a></button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div><a id="arrow-up" href="#home"><i class="fa fa-arrow-up"></i></a>
         <div class="menu">  <i class="fa fa-window-close iconmenu">               </i>
           <div class="menu__home"><a class="close-home" href="#home">Home</a></div>
           <div class="menu__graphs"><a class="close-quisque" href="#quisque">Graphs</a></div>
@@ -91,8 +91,8 @@
                     <div class="col-md-12 col-lg-10">
                       <div class="quisque__contein--video-parts">
                         <div class="row margin"><a href="#popup">
-                            <div class="col-md-6 col-lg-4"><img src="img/videoGif-min.png" alt="video"></div>
-                            <div class="col-md-6 col-lg-7 align-self-center">
+                            <div class="col-md-6 col-lg-6 col-xl-4"><img src="img/videoGif-min.png" alt="video"></div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 align-self-center">
                               <p>Lorem, ipsum dolor adicipling soluta decimus eaque. Quia volptatum nobis excepturi.</p>
                             </div></a></div>
                       </div>
@@ -315,9 +315,9 @@
           </div>
         </div>
       </footer>
-      <div class="popup" id="popup"><a href="#quisque"><i class="fa fa-window-close"></i></a>
+      <div class="popup" id="popup"><a href="#quisque" id="stop-video"><i class="fa fa-window-close"></i></a>
         <div class="popup__video">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rq9yhEkMXMU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div id="player"></div>
         </div>
       </div>
     </main>
