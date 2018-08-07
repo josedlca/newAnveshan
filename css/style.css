@@ -35,7 +35,7 @@ body {
   background-position: center;
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
   .home__header {
     padding: 2% 0;
     width: 100%;
@@ -190,7 +190,7 @@ body {
   .home__description--tittle {
     padding: 8% 0; }
     .home__description--tittle h1 {
-      font-size: 4.5rem; }
+      font-size: 4rem; }
   .home__description--arrowDown {
     padding: 5.5% 0; } }
 
@@ -222,10 +222,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__home a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__graphs {
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
@@ -238,10 +235,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__graphs a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__process {
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
@@ -254,10 +248,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__process a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__services {
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
@@ -270,10 +261,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__services a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__step {
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
@@ -286,10 +274,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__step a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__footer {
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
     width: 30rem;
@@ -302,10 +287,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__footer a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu__contact {
     display: none;
     background: linear-gradient(to bottom right, rgba(128, 44, 100, 0.9), rgba(154, 65, 124, 0.6));
@@ -319,10 +301,7 @@ body {
       color: #fff;
       font-weight: 600;
       width: 100%;
-      height: 100%;
-      transition: .2s all; }
-      .menu__contact a:hover {
-        font-size: 5.5rem; }
+      height: 100%; }
   .menu i {
     position: absolute;
     top: 0;
