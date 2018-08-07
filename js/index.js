@@ -65,5 +65,8 @@ stopCloseVideo.addEventListener('click', function(){
     player.stopVideo();
 });
 
+//smoot scroll
+var scroll = new SmoothScroll('a[href*="#"]');
+
 
 
