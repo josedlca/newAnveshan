@@ -1,3 +1,10 @@
+//smoot scroll
+var scroll = new SmoothScroll('a[href="#home"]')
+var scroll = new SmoothScroll('a[href="#quisque"]')
+var scroll = new SmoothScroll('a[href="#process"]')
+var scroll = new SmoothScroll('a[href="#step"]')
+var scroll = new SmoothScroll('a[href="#services"]')
+var scroll = new SmoothScroll('a[href="#footer"]')
 
 let homeMenu = document.getElementById('home-menu');
 let menu = document.querySelector('.menu');
@@ -10,6 +17,8 @@ let closeStep = document.querySelector('.close-step');
 let closeFooter = document.querySelector('.close-footer');
 let closeContact = document.querySelector('.close-contact');
 let arrowUp = document.getElementById('arrow-up');
+let popup = document.getElementById('popup');
+let viewPopup = document.querySelector('.quisque__contein--video-parts-into') 
 let stopCloseVideo = document.getElementById('stop-video');
 
 homeMenu.addEventListener('click', function(){
@@ -44,6 +53,12 @@ window.addEventListener('scroll',function(){
     }
 });
 
+//view popup
+viewPopup.addEventListener('click', function(){
+    popup.classList.add('view-popup');
+})
+
+
   // Load the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/player_api";
@@ -61,12 +76,13 @@ window.addEventListener('scroll',function(){
     });
   }
 
+
 stopCloseVideo.addEventListener('click', function(){
+    popup.classList.remove('view-popup');
     player.stopVideo();
 });
 
-//smoot scroll
-var scroll = new SmoothScroll('a[href*="#"]');
+
 
 
 
